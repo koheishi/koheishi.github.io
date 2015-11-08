@@ -4,13 +4,167 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title> ポートフォリオページ | Kohei Ishikawa</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        font-size: 14px;
+      }
+      
+      .navbar {
+        border-radius: 0; 
+      }
+      
+      .row {
+        margin-bottom: 50px;
+      }
+      
+      .icon {
+        text-align: center;
+      }
+      
+      .icon .glyphicon {
+        margin-bottom: 10px;
+        font-size: 40px;
+        color: #777;
+      }
+      
+      .content h2 {
+        margin-top: 0;
+        padding-bottom: 15px;
+      }
+      .content p {
+        margin-bottom: 30px;
+      }
+      .photo img {
+        max-width: 120px;
+        border: 5px solid #fff;
+        border-radius: 100%;
+      }
+
+      footer {
+        border-top: 1px solid#e7e7e7;
+        background-color: #f8f8f8;
+        text-align: center;
+      }
+      
+      .copyright {
+        padding: 20px 0;
+        font-size: 12px;
+        color: #666;
+      }
+      
+      @media (max-width: 768px) {
+        body {
+          font-size: 12px;
+        }
+        h1 {
+          font-size: 30px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+        .panel-title {
+          font-size: 14px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Kohei Ishikawa(Real Education Inc.)</a>
+          </div>
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Message Board</a></li>
+              <li><a href="#">Twitter Clone</a></li>
+              <li><a href="#">Monolist</a></li>
+              <li><a href="#">Original</a></li>
+              <li class="active"><a href="https://github.com/koheishi">GitHub Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class=container>
+      <div class="page-header">
+        <h1>Self Introduction</h1>
+      </div>
+        <div class="row">
+        <div class="icon col-sm-3 hidden-xs">
+          <div class="photo">
+            <img src="profile.jpg" alt="" />
+            <p>石川 公平</p>
+          </div>
+        </div>
+        <div class="content col-sm-9">
+          <p>
+            自己紹介です。
+          </p>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>生年月</td>
+                  <td>1977年12月</td>
+                </tr>
+                <tr>
+                  <td>出身地</td>
+                  <td>秋田県秋田市</td>
+                </tr>
+                <tr>
+                  <td>現住所</td>
+                  <td>神奈川県茅ヶ崎市</td>
+                </tr>
+                <tr>
+                  <td>職業</td>
+                  <td>経営者</td>
+                </tr>
+                <tr>
+                  <td>技能</td>
+                  <td>会社経営、システム設計、安く旅をする</td>
+                </tr>
+                <tr>
+                  <td>趣味</td>
+                  <td>冒険、宝探し、お酒</td>
+                </tr>
+                <tr>
+                  <td>ひと言</td>
+                  <td>よろしくお願いします。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title" id="panel-title">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 
+                株式会社リアルエデュケーションについて
+              </h3>
+            </div>
+            <div class="panel-body">
+              個人・法人に向けて、学習コンテンツ制作・販売、講座・研修サービス、各種コンサルティングを実施しています。
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+    <footer>
+      <div class="copyright">© 2015 Real Education Inc. All Rights Reserved.</div>
+    </footer>
   </body>
 </html>
